@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import {motion} from 'framer-motion'
-const { generateImage } = useContext(AppContext); 
+import { AppContext } from '../context/AppContex';
+// const { generateImage } = useContext(AppContext); 
 
 
 
