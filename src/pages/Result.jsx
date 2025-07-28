@@ -2,14 +2,15 @@ import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import {motion} from 'framer-motion'
 import { AppContext } from '../context/AppContex';
-// const { generateImage } = useContext(AppContext); 
+
 
 
 
 
 
 function Result() {
-
+  
+  const { generateImage } = useContext(AppContext);
   const [image, setImage] = useState(assets.sample_img_1);
   const [isImageLoading, setIsImageLoading] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -22,7 +23,7 @@ function Result() {
     setLoading(true);
 
     if(input){
-      const image = await gernateImage(input)
+      const image = await generateImage(input); 
       if(image){
         setIsImageLoading(true);
         setImage(image);
