@@ -8,7 +8,6 @@ function ByCredits() {
 
   const {user} = useContext(AppContext)
 
-
   return (
     <motion.div 
     initial={{opacity:0.2, y:100}}
