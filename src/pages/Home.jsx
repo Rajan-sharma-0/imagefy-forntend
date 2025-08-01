@@ -8,12 +8,12 @@ import Testimonials from "../components/Testimonials"
 function Home() {
   return (
     <div>
-      <Header/>
-      <Steps/>
-      <Discription/>
-      <Testimonials/>
-      <GenerateBtn/>
-      
+      <Header />
+      <Steps />
+      <Discription />
+      <Testimonials />
+      <GenerateBtn />
+
     </div>
   )
 }
