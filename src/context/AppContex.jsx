@@ -28,7 +28,7 @@
 //         } catch (error) {
 //             console.log(error);
 //             toast.error(error.message)
-            
+
 //         }
 //     }
 
@@ -114,8 +114,8 @@ const AppContextProvider = ({ children }) => {
 
     const generateImage = async (prompt) => {
         try {
-            const res = await axios.post(`${backendUrl}/api/image/generate-image`, 
-                { prompt }, 
+            const res = await axios.post(`${backendUrl}/api/image/generate-image`,
+                { prompt },
                 { headers: { token } }
             );
 
